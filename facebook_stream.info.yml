@@ -2,4 +2,4 @@ name: Facebook Stream
 type: module
 description: This module leverages the Facebook Open Stream API. Once installed, the module allows users of the Drupal instance to access their Facebook account and view the real time stream of their friends’ updates from Facebook in a block within their Drupal instance. Users can control the number of posts viewable via the profile settings tab.
 core: 8.x
-package: Custom
+package: facebook_stream
