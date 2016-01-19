@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains facebook_stream.module..
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function facebook_stream_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the facebook_stream module.
+    case 'help.page.facebook_stream':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module leverages the Facebook Open Stream API. Once installed, the module allows users of the Drupal instance to access their Facebook account and view the real time stream of their friends’ updates from Facebook in a block within their Drupal instance. Users can control the number of posts viewable via the profile settings tab.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
